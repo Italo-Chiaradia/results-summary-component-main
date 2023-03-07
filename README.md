@@ -29,4 +29,4 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Italo Chiaradia](https://www.frontendmentor.io/profile/yourusername)
