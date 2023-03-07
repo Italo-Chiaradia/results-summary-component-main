@@ -13,11 +13,11 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ## Overview
 ### Screenshot
 
-![](./screenshot.jpg)
+![](/design/desktop-preview.jpg)
 
 ### Links
 
-- Live Project [URL Project](https://cosmic-custard-596419.netlify.app/)
+- Live Project [URL](https://cosmic-custard-596419.netlify.app/)
 
 ### Built with
 
