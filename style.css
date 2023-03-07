@@ -1,0 +1,222 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS Reset */
+/* General Configs */ 
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+:root {
+	/* Primary colors */
+	--light-red: hsl(0, 100%, 67%);
+	--orangey-yellow: hsl(39, 100%, 56%);
+	--green-teal: hsl(166, 100%, 37%);
+	--cobalt-blue: hsl(234, 85%, 45%);
+
+	/* Gradrients */
+	--gradient-bg: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	--gradient-circle: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+	/* Neutral */
+	--white: hsl(0, 0%, 100%); /* Heading, Nums */
+	--pale-blue: hsl(221, 100%, 96%); /* Nums */
+	--light-lavender: hsl(241, 100%, 89%); /* Paragraphs */
+	--dark-gray-blue: hsl(224, 30%, 27%); /* Heading, Btn, Nums */
+}
+
+body {
+	font-size: 18px;
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-weight: 500;
+	line-height: 1.4;
+	color: var(--light-lavender);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/* General Configs */
+/* Main container - Mobile */
+.main-container {
+	width: 100%;
+	min-width: 375px;
+	max-width: 750px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+/* Main container - Mobile */
+/* Result section - Mobile */
+.result-section {
+	background: var(--gradient-bg);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	border-radius: 0px 0px 50px 50px;
+	padding: 25px 30px;
+	flex: 1;
+}
+.circle {
+	padding: 25px 40px;
+	border-radius: 50%;
+	background: var(--gradient-circle);
+	line-height: 1.2;
+}
+.circle .average-score {
+	font-size: 4em;
+	color: var(--white);
+}
+.comment .comment-title {
+	font-size: 1.8em;
+	color: var(--white)
+}
+/* Result section - Mobile */
+/* Summary section - Mobile */
+.summary-section {
+	padding: 20px 30px;
+	flex: 1;
+}
+.summary-title {
+	color: var(--dark-gray-blue);
+	margin-bottom: 24px;
+}
+.test-details {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 15px;
+	border-radius: 20px;
+}
+.name-icon-container {
+	display: flex;
+	gap: 10px;
+}
+.test-points {
+	color: hsl(240, 29%, 70%);
+}
+.test-points .correct-answers {
+	color: var(--dark-gray-blue);
+}
+.reaction {
+	color: var(--light-red); 
+	background-color: hsla(0, 100%, 67%, .1)
+}
+.memory {
+	color: var(--orangey-yellow);
+	background-color: hsla(39, 100%, 56%, .1);
+}
+.verbal {
+	color: var(--green-teal);
+	background-color: hsla(166, 100%, 37%, .1);
+}
+.visual {
+	color: var(--cobalt-blue);
+	background-color: hsla(234, 85%, 45%, .1);
+}
+.btn-summary {
+	padding: 15px;
+	width: 100%;
+	background: var(--dark-gray-blue);
+	color: var(--white);
+	font-size: 18px;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.btn-summary:hover {
+	background: var(--gradient-bg);
+}
+/* Summary section - Mobile */
+/* Attribution */
+.attribution {
+	color: black;
+	
+}
+/* Attribution */
+/* Main container - Desktop */
+@media screen and (min-width: 750px) {
+	body {
+		height: 100vh;
+	}
+	.main-container {
+		flex-direction: row;
+		border-radius: 40px;
+		box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+	}
+	.result-section {
+		border-radius: 0px 40px 40px 0px;
+		padding: 55px;
+		gap: 40px;
+		justify-content: space-between;
+	}
+	.result-title {
+		font-size: 1.5em;
+	}
+	.circle {
+		padding: 48px 60px;
+	}
+	.comment .comment-title {
+		font-size: 2em;
+		color: var(--white);
+		margin-bottom: 10px;
+	}
+	.summary-section {
+		padding: 55px 40px;
+	}
+	.summary-title {
+		font-size: 1.5em;
+	}
+	.attribution {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+/* Main container - Desktop */

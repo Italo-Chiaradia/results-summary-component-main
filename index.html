@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,700;0,800;1,500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <main class="main-container">
+    <section class="result-section">
+      <h2 class="result-title">Your Result</h2>
+      <div class="circle">
+        <p class="average-score">76</p>
+        <p class="total-questions">of 100</p> 
+      </div> 
+      <div class="comment">
+        <h3 class="comment-title">Great</h3>
+        <p class="comment-description">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </section>
+
+    <section class="summary-section">
+      <h2 class="summary-title">Summary</h2>
+      
+      <div class="test-details reaction">
+        <span class="name-icon-container">
+          <img src="assets/images/icon-reaction.svg" class="icon">
+          <p class="test-name">Reaction</p>
+        </span>
+        <p class="test-points"><span class="correct-answers">80</span> / 100</p>
+      </div>
+
+      <div class="test-details memory">
+        <span class="name-icon-container">
+          <img src="assets/images/icon-memory.svg" class="icon">
+
+          <p class="test-name">Memory</p>
+        </span>
+
+        <p class="test-points"><span class="correct-answers">92</span> / 100</p>
+      </div>
+
+      <div class="test-details verbal">
+        <span class="name-icon-container">
+          <img src="assets/images/icon-verbal.svg" class="icon">
+
+          <p class="test-name">Verbal</p>
+        </span>
+
+        <p class="test-points"><span class="correct-answers">61</span> / 100</p>
+      </div>
+
+      <div class="test-details visual">
+        <span class="name-icon-container">
+          <img src="assets/images/icon-visual.svg" class="icon">
+
+          <p class="test-name">Visual</p>
+        </span>
+
+        <p class="test-points"><span class="correct-answers">72</span> / 100</p>
+      </div>
+      
+      <button class="btn-summary">Continue</button>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Italo-Chiaradia">Italo Chiaradia</a>.
+  </div>
+  
+</body>
+</html>
